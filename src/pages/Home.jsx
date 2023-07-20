@@ -295,7 +295,15 @@ const Home = () => {
                                       class="rt-img"
                                       data-src={heroImage1}
                                       alt="video call"
-                                      data-srcset="assets/images/image-1-2.webp 1x,assets/images/image-1-2.webp 2x"
+                                      data-srcset={
+                                        heroImage1 +
+                                        " " +
+                                        "1x," +
+                                        " " +
+                                        heroImage1 +
+                                        " " +
+                                        "2x"
+                                      }
                                     />
                                   </div>
                                 </div>
